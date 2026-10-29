@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171714" />
+    <meta name="description" content="Contact MHR Groups to discuss industrial development, real estate, technology and partnerships." />
+    <title>Contact Us | MHR Groups</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap");
+      :root{--ink:#171714;--paper:#fff;--gold:#b99a68;--muted:#77766f;--line:rgba(23,23,20,.14);--white:#fff}
+      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}
+      .topbar{height:94px;border-bottom:1px solid rgba(255,255,255,.14);position:absolute;z-index:5;inset:0 0 auto;color:#fff}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:32px}.brand{display:flex;align-items:center;gap:13px;color:#fff}.brand-mark{width:48px;height:48px;display:grid;place-items:center;background:rgba(185,154,104,.13);border:1px solid rgba(185,154,104,.48);font:500 17px "Playfair Display",serif;color:#d7bd91;letter-spacing:-.08em}.brand-name{font:500 19px "Playfair Display",serif;letter-spacing:.15em}.brand-name small{display:block;margin-top:6px;font:600 8px "DM Sans",sans-serif;letter-spacing:.2em;color:rgba(255,255,255,.56)}.nav-links{display:flex;align-items:center;gap:34px;font-size:10px;letter-spacing:.16em;color:rgba(255,255,255,.78)}.nav-links a,.nav-cta{transition:color .2s ease}.nav-links a:hover,.nav-cta:hover{color:#e1c596}.nav-cta{border:1px solid rgba(255,255,255,.45);padding:15px 18px;font-size:10px;letter-spacing:.14em;color:#fff}
+      .hero{min-height:590px;height:70vh;max-height:760px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 15%,rgba(185,154,104,.23),transparent 35%),linear-gradient(115deg,#171714 0%,#26251f 58%,#323027 100%);color:#fff;display:flex;align-items:flex-end;padding:150px 0 88px}.hero:before{content:"MHR";position:absolute;right:-1.5vw;top:105px;font:500 clamp(210px,35vw,510px)/.8 "Playfair Display",serif;color:rgba(255,255,255,.025);letter-spacing:-.08em;pointer-events:none}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(185,154,104,.2);border-radius:50%;right:8%;top:22%;box-shadow:0 0 0 54px rgba(185,154,104,.025),0 0 0 108px rgba(185,154,104,.02);pointer-events:none}.hero-content{position:relative;z-index:1}.eyebrow{color:#d2b987;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:14px}.eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}.hero h1{font:400 clamp(56px,8.5vw,112px)/.98 "Playfair Display",serif;letter-spacing:-.045em;max-width:900px;margin:22px 0 20px}.hero h1 em{font-weight:400;color:#c6a774}.hero-copy{max-width:530px;color:rgba(255,255,255,.72);font-size:14px;line-height:1.85;margin-bottom:0}.hero-stamp{position:absolute;z-index:1;right:max(32px,calc((100vw - 1240px)/2));bottom:82px;color:rgba(255,255,255,.62);writing-mode:vertical-rl;font-size:9px;letter-spacing:.23em;text-transform:uppercase}.hero-stamp:after{content:"";height:54px;width:1px;background:var(--gold);margin:16px auto 0;display:block}
+      .contact-area{padding:100px 0 120px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.section-head h2{font:500 clamp(34px,4vw,52px)/1.08 "Playfair Display",serif;letter-spacing:-.035em;margin:12px 0 0;max-width:620px}.section-head p{color:var(--muted);max-width:320px;font-size:13px;line-height:1.8;margin:0}.contact-grid{display:grid;grid-template-columns:.84fr 1.16fr;gap:22px;align-items:stretch}.details{background:#faf9f6;padding:42px;display:flex;flex-direction:column;justify-content:space-between;min-height:590px;position:relative;overflow:hidden}.details:after{content:"";position:absolute;right:-75px;bottom:-110px;width:320px;height:320px;border:1px solid rgba(185,154,104,.46);border-radius:50%;box-shadow:0 0 0 35px rgba(185,154,104,.06),0 0 0 70px rgba(185,154,104,.045)}.details>*{position:relative;z-index:1}.details h3{font:500 31px/1.15 "Playfair Display",serif;margin:15px 0 12px}.details-intro{font-size:13px;line-height:1.8;color:#66645d;max-width:360px}.detail-list{margin:30px 0 0}.detail{border-top:1px solid rgba(23,23,20,.14);padding:18px 0;display:grid;grid-template-columns:105px 1fr;gap:10px}.detail:last-child{border-bottom:1px solid rgba(23,23,20,.14)}.detail-label{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#898477;padding-top:4px}.detail-value{font-size:14px;font-weight:500;line-height:1.6}.detail-value a{border-bottom:1px solid rgba(185,154,104,.65);padding-bottom:2px}.detail-value a:hover{color:#8a6d3d}.response-note{display:flex;gap:13px;align-items:flex-start;margin-top:27px;font-size:11px;line-height:1.7;color:#77766f}.response-icon{width:25px;height:25px;display:grid;place-items:center;border:1px solid rgba(185,154,104,.7);border-radius:50%;color:#927747;flex:none}
+      .form-card{background:#fff;padding:42px;box-shadow:0 20px 60px rgba(35,32,24,.055)}.form-top{display:flex;align-items:start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}.form-top h3{font:500 28px "Playfair Display",serif;margin:0 0 6px}.form-top p{font-size:12px;color:var(--muted);margin:0}.form-number{color:#bcb6a8;font:400 26px "Playfair Display",serif}.row{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{margin-bottom:18px}.field label{display:block;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#69675f;margin-bottom:9px}.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid #d8d5ce;background:transparent;padding:10px 0 12px;color:var(--ink);font-size:13px;outline:none;border-radius:0;transition:border-color .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field input::placeholder,.field textarea::placeholder{color:#aaa79f}.field textarea{resize:vertical;min-height:90px}.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#817c70 50%),linear-gradient(135deg,#817c70 50%,transparent 50%);background-position:calc(100% - 7px) 17px,100% 17px;background-size:7px 7px,7px 7px;background-repeat:no-repeat}.submit-row{display:flex;align-items:center;gap:20px;margin-top:4px}.submit{border:1px solid var(--ink);background:var(--ink);color:#fff;display:inline-flex;align-items:center;gap:30px;padding:16px 19px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:.2s}.submit:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}.submit span{font-size:15px}.form-help,.form-msg{font-size:10px;line-height:1.6;color:#89867d}.form-msg{display:none;margin-top:12px;padding:12px;background:#fff;color:var(--ink)}
+      .easy-connect{background:#fff;padding:82px 0}.easy-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:34px}.easy-head h2{font:500 clamp(34px,4vw,48px)/1.08 "Playfair Display",serif;letter-spacing:-.035em;margin:13px 0 0}.easy-head p{max-width:350px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}.easy-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.easy-card{min-height:154px;padding:20px;background:rgba(255,255,255,.64);border:1px solid rgba(23,23,20,.1);display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}.easy-card:hover{transform:translateY(-4px);border-color:rgba(185,154,104,.7);box-shadow:0 15px 34px rgba(23,23,20,.07)}.easy-icon{width:40px;height:40px;border:1px solid rgba(185,154,104,.5);border-radius:50%;display:grid;place-items:center;color:#80643a;background:#fff}.easy-icon svg{width:18px;height:18px;display:block;fill:currentColor}.easy-name{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:600}.easy-arrow{color:#987849;font-size:14px}.easy-note{display:block;margin-top:5px;color:#89867d;font-size:9px;letter-spacing:.06em}.location{background:#fff;padding:90px 0}.location-grid{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:70px}.location-copy h2{font:500 clamp(36px,4.5vw,58px)/1.05 "Playfair Display",serif;letter-spacing:-.04em;margin:16px 0}.location-copy p{font-size:13px;line-height:1.9;color:var(--muted);max-width:370px}.city-list{margin-top:30px;border-top:1px solid var(--line)}.city{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-size:12px}.city strong{font-weight:600}.city span{color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase}.map-panel{background:#fff;min-height:380px;display:grid;place-items:center;position:relative;overflow:hidden}.map-panel:before,.map-panel:after{content:"";position:absolute;width:290px;height:290px;border:1px solid rgba(185,154,104,.12);border-radius:50%}.map-panel:after{width:410px;height:410px}.map-art{position:relative;width:min(100%,440px);aspect-ratio:1;z-index:1}.map-shape{position:absolute;inset:4%;width:92%;height:92%;object-fit:contain;filter:sepia(.38) saturate(.62) hue-rotate(2deg) brightness(.92);opacity:.84}.map-label{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.map-label.ranchi{left:42%;top:49%}.map-label.jamshedpur{left:59%;top:66%}.map-dot{width:11px;height:11px;border-radius:50%;background:#b99a68;border:3px solid #fff;box-shadow:0 0 0 4px rgba(185,154,104,.28)}.map-credit{position:absolute;bottom:15px;right:18px;z-index:3;font-size:8px;color:#8c887f}.map-credit a{text-decoration:underline;text-underline-offset:2px}.bottom-band{background:#fff;padding:38px 0}.band-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.band-inner strong{font:500 23px "Playfair Display",serif}.band-inner p{font-size:12px;color:#77766f;margin:7px 0 0}.band-link{font-size:10px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding:0 0 7px}.footer{background:#171714;color:#fff;padding:66px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:50px;padding-bottom:52px;border-bottom:1px solid rgba(255,255,255,.13)}.footer-brand{display:inline-block;font:500 17px "Playfair Display",serif;letter-spacing:.15em}.footer-brand small{display:block;margin-top:8px;font:500 8px "DM Sans",sans-serif;letter-spacing:.18em;color:#969188}.footer-about{max-width:230px;font-size:11px;line-height:1.8;color:#969188;margin:22px 0}.footer-col h4{font-size:9px;color:#d2b987;letter-spacing:.18em;font-weight:600;margin:4px 0 20px}.footer-col a{display:block;font-size:11px;color:#bbb8b0;margin:0 0 13px;transition:color .2s}.footer-col a:hover,.footer-bottom a:hover{color:#d7bd91}.footer-email{font-size:11px!important;color:#fff!important;border-bottom:1px solid rgba(185,154,104,.55);display:inline-block!important;padding-bottom:5px}.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:20px;color:#89867d;font-size:9px}.footer-bottom a{color:#b7b2a7;letter-spacing:.12em}.footer-bottom-links{display:flex;gap:22px}
+      @media(max-width:900px){.nav-links{gap:17px}.hero-stamp{right:32px}.contact-grid{grid-template-columns:1fr 1.1fr}.details,.form-card{padding:32px}.details{min-height:600px}.location-grid{gap:35px}.easy-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1.3fr 1fr 1fr;gap:32px}.footer-grid>.footer-col:last-child{grid-column:2}}
+      @media(max-width:700px){.wrap{width:calc(100% - 40px)}.topbar{height:76px}.brand-mark{width:42px;height:42px}.brand-name{font-size:16px}.nav-links{display:none}.nav-cta{padding:13px 12px;font-size:9px}.hero{height:auto;min-height:575px;padding:145px 0 70px}.hero:before{top:180px;right:-25px}.hero:after{width:320px;height:320px;right:-105px;top:24%}.hero h1{font-size:clamp(52px,14vw,78px)}.hero-copy{font-size:13px;max-width:390px}.hero-stamp{display:none}.contact-area{padding:70px 0 80px}.section-head{display:block;margin-bottom:28px}.section-head p{margin-top:15px}.contact-grid{grid-template-columns:1fr}.details{min-height:auto;gap:24px;padding:28px}.form-card{padding:28px}.row{grid-template-columns:1fr;gap:0}.detail{grid-template-columns:90px 1fr}.easy-connect{padding:68px 0}.easy-head{display:block}.easy-head p{margin-top:14px}.easy-grid{grid-template-columns:repeat(2,1fr)}.easy-card{min-height:135px;padding:16px}.location{padding:70px 0}.location-grid{grid-template-columns:1fr;gap:24px}.map-panel{min-height:320px}.map-art{width:min(100%,360px)}.band-inner{align-items:flex-start;flex-direction:column}.footer{padding-top:48px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px 20px;padding-bottom:30px}.footer-grid>.footer-intro{grid-column:1/-1}.footer-grid>.footer-col:last-child{grid-column:auto}.footer-bottom{align-items:flex-start;flex-direction:column}.footer-bottom-links{flex-wrap:wrap}}
+      .detail-phones span{display:block;margin:0 0 4px}.detail-phones small{font-size:9px;color:#898477;font-weight:400;letter-spacing:.04em;margin-left:5px}
+      .footer-phone{display:block;margin:16px 0 0;color:#a9a59b;font-size:10px;line-height:1.8}.footer-phone strong{display:block;margin-bottom:4px;color:#d2b987;font-size:8px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+      .easy-connect{position:relative;overflow:hidden;background:#fff}
+      .easy-connect:before{content:"MHR";position:absolute;right:-22px;top:4px;color:transparent;-webkit-text-stroke:1px rgba(185,154,104,.09);font:500 clamp(120px,22vw,300px)/1 "Playfair Display",serif;letter-spacing:-.09em;pointer-events:none}
+      .easy-connect .wrap{position:relative;z-index:1}
+      .easy-card{min-height:166px;padding:22px;background:#faf9f6;border-color:rgba(23,23,20,.08);box-shadow:0 12px 30px rgba(23,23,20,.035);transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+      .easy-card:hover{transform:translateY(-3px);border-color:rgba(185,154,104,.56);box-shadow:0 18px 36px rgba(23,23,20,.075)}
+      .easy-icon{width:46px;height:46px;border-radius:14px;border-color:rgba(185,154,104,.24);background:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.9)}
+      .easy-icon svg{width:20px;height:20px}
+      .easy-name{font-size:13px;letter-spacing:.01em}
+      .easy-note{font-size:9px;letter-spacing:.09em;text-transform:uppercase}
+      .easy-arrow{display:none}
+      @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+      .brand-symbol{display:block;width:82px;height:48px;object-fit:contain;background:transparent}.footer-brand{display:flex;align-items:center;gap:12px}.footer-logo-image{display:block;width:72px;height:42px;object-fit:contain;background:transparent;flex:none}@media(max-width:700px){.brand-symbol{width:68px;height:40px}.footer-logo-image{width:64px;height:38px}}
+
+      .header{position:fixed;z-index:50;inset:0 0 auto;color:#fff;transition:.3s;border-bottom:1px solid rgba(255,255,255,.15)}
+      .header.scrolled{background:rgba(17,17,15,.94);backdrop-filter:blur(12px)}
+      .nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+      .brand{display:flex;align-items:center;gap:14px;color:#fff}.brand-emblem{display:block;width:86px;height:48px;object-fit:contain;background:transparent;flex:none}
+      .brand span{font:500 19px "Playfair Display",serif;letter-spacing:.14em}.brand small{display:block;font:9px "DM Sans",sans-serif;letter-spacing:.2em;color:#d5c4a5;margin-top:5px}
+      .nav-links{display:flex;align-items:center;gap:25px}.nav-links a{font-size:10px;letter-spacing:.1em;color:rgba(255,255,255,.82);transition:.2s}.nav-links a:hover{color:#d7bd91}
+      .nav-cta{border:1px solid rgba(255,255,255,.55);padding:13px 17px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;transition:.25s}.nav-cta:hover{background:var(--gold);border-color:var(--gold)}
+      .menu-btn{display:none;background:none;color:#fff;border:0;font-size:26px;cursor:pointer}
+      @media(max-width:980px){.nav-links,.nav-cta{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:84px;left:0;right:0;background:#171714;padding:26px 30px;flex-direction:column;align-items:flex-start}.footer-directory{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media(max-width:560px){.brand-emblem{width:70px;height:42px}.brand span{font-size:16px}.footer-endline{font-size:9px}}
+      /* V13 — architectural sitemap footer inspired by the supplied reference */
+      .footer-dlf {
+        background: #080909;
+        color: #f3f1ec;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+      }
+      .footer-dlf .footer-shell {
+        position: relative;
+        z-index: 1;
+      }
+      .footer-sitemap-toggle {
+        height: 58px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        color: #a6a6a3;
+      }
+      .toggle-chevron {
+        font-size: 17px;
+        color: #888;
+      }
+      .footer-identity {
+        min-height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+      }
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #f5f3ee;
+        text-decoration: none;
+      }
+      .footer-logo-mark {
+        width: 54px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #c7aa78;
+        color: #d7bd91;
+        font:
+          20px "Playfair Display",
+          serif;
+        letter-spacing: -0.04em;
+      }
+      .footer-logo-emblem {
+        display: block;
+        width: 62px;
+        height: 50px;
+        object-fit: contain;
+        flex: 0 0 auto;
+      }
+      .footer-logo-type {
+        font:
+          400 22px "Playfair Display",
+          serif;
+        letter-spacing: 0.14em;
+        white-space: nowrap;
+      }
+      .footer-logo-type small {
+        display: block;
+        font:
+          8px "DM Sans",
+          sans-serif;
+        letter-spacing: 0.22em;
+        color: #b5a78f;
+        margin-top: 6px;
+      }
+      .footer-call {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+        margin-right: 10%;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        color: #aaa;
+      }
+      .footer-call span {
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        color: #7f807d;
+      }
+      .footer-call a {
+        color: #d5d4cf;
+        text-decoration: none;
+      }
+      .footer-directory {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: clamp(22px, 4vw, 70px);
+        padding: 30px 0 52px;
+        position: relative;
+        isolation: isolate;
+      }
+      .footer-directory:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: 2%;
+        top: 0;
+        width: 24%;
+        height: 100%;
+        opacity: 0.16;
+        background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80")
+          center/cover no-repeat;
+        mask-image: linear-gradient(90deg, transparent, #000 35%);
+        pointer-events: none;
+      }
+      .footer-dir-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+      .footer-dir-col h4 {
+        font:
+          400 12px "DM Sans",
+          sans-serif;
+        letter-spacing: 0.12em;
+        color: #858681;
+        margin: 0 0 8px;
+      }
+      .footer-dir-col > i,
+      .footer-dir-sub > i {
+        display: block;
+        width: 25px;
+        height: 5px;
+        background: #303230;
+        margin: 0 0 14px;
+      }
+      .footer-dlf .footer-dir-col a {
+        color: #bdbdb8;
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 0.035em;
+        margin: 5px 0;
+        transition: color 0.2s;
+      }
+      .footer-dlf .footer-dir-col a:hover,
+      .footer-legal a:hover {
+        color: #d7bd91;
+      }
+      .footer-dir-sub {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-dir-sub h4 {
+        margin-bottom: 8px;
+      }
+      .footer-social {
+        margin-top: 16px;
+      }
+      .footer-social a {
+        display: grid;
+        place-items: center;
+        color: #bdbdb8;
+        text-decoration: none;
+      }
+      .footer-legal {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        padding: 0 0 26px;
+        color: #777873;
+        font-size: 11px;
+        letter-spacing: 0.04em;
+      }
+      .footer-legal > div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .footer-legal a {
+        color: #777873;
+        text-decoration: none;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        letter-spacing: 0.08em;
+      }
+      .footer-wordmark {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #080909;
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        line-height: 0.78;
+      }
+      .footer-wordmark:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(8, 9, 9, 0.52),
+            rgba(8, 9, 9, 0.05),
+            rgba(8, 9, 9, 0.5)
+          ),
+          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85")
+            center 46% / cover no-repeat;
+        opacity: 0.72;
+      }
+      .footer-wordmark span {
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font:
+          600 clamp(74px, 17.3vw, 270px)/0.9 "Playfair Display",
+          serif;
+        letter-spacing: -0.075em;
+        white-space: nowrap;
+        color: transparent;
+        background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85");
+        background-size: cover;
+        background-position: center 48%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px rgba(215, 189, 145, 0.15);
+        padding: 0.02em 0 0.06em;
+      }
+      .footer-endline {
+        min-height: 54px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+        padding: 16px max(24px, calc((100% - 1320px) / 2));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        color: #777873;
+        font-size: 10px;
+        letter-spacing: 0.09em;
+      }
+      .footer-endline a {
+        color: #b6a17e;
+        text-decoration: none;
+        font-size: 9px;
+        letter-spacing: 0.15em;
+      }
+      @media (max-width: 760px) {
+        .footer-directory {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px 22px;
+          padding-bottom: 35px;
+        }
+        .footer-directory:after {
+          width: 40%;
+          opacity: 0.1;
+        }
+        .footer-call {
+          margin-right: 0;
+        }
+        .footer-logo-type {
+          font-size: 17px;
+        }
+        .footer-logo-mark {
+          width: 46px;
+          height: 40px;
+        }
+        .footer-logo-emblem {
+          width: 52px;
+          height: 44px;
+        }
+        .brand-emblem {
+          width: 45px;
+          height: 42px;
+        }
+        .footer-endline {
+          flex-wrap: wrap;
+          padding: 16px 20px;
+        }
+        .footer-wordmark span {
+          font-size: 18vw;
+        }
+      }
+      @media (max-width: 480px) {
+        .footer-identity {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 20px 0;
+          gap: 16px;
+        }
+        .footer-call {
+          padding-left: 60px;
+        }
+        .footer-directory {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-dir-col h4 {
+          font-size: 10px;
+        }
+        .footer-dlf .footer-dir-col a {
+          font-size: 12px;
+        }
+        .footer-legal {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .footer-wordmark {
+          padding: 8px 0;
+        }
+        .footer-wordmark span {
+          font-size: 17.5vw;
+        }
+      }
+
+    </style>
+  </head>
+  <body id="top">
+    <header class="header" id="header">
+      <div class="wrap nav">
+        <a class="brand" href="mhr_groups_website_hyatt_vista_updated.html#home" aria-label="MHR Groups home"><img class="brand-emblem" src="logo.png" alt="" /><span>MHR GROUPS<small>MODERNITY · HONESTY · RELIABILITY</small></span></a>
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+          <a href="mhr_groups_website_hyatt_vista_updated.html#about">ABOUT</a><a href="mhr_groups_website_hyatt_vista_updated.html#projects">PROJECTS</a><a href="mhr_groups_website_hyatt_vista_updated.html#approach">APPROACH</a><a href="mhr_groups_website_hyatt_vista_updated.html#sustainability">SUSTAINABILITY</a><a href="mhr_groups_website_hyatt_vista_updated.html#clients">PARTNERS</a><a href="mhr_groups_website_hyatt_vista_updated.html#news">NEWS &amp; EVENTS</a>
+        </nav>
+        <a class="nav-cta" href="#enquiry">LET’S CONNECT ↗</a><button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap hero-content">
+          <div class="eyebrow">A good place to begin</div>
+          <h1>Let’s make<br />something <em>lasting.</em></h1>
+          <p class="hero-copy">From a first idea to a long-term partnership, we’d love to hear what you’re building. Tell us a little about it and the right person at MHR will be in touch.</p>
+        </div>
+        <div class="hero-stamp">MHR GROUPS · INDIA</div>
+      </section>
+      <section class="contact-area" id="enquiry">
+        <div class="wrap">
+          <div class="section-head">
+            <div><div class="eyebrow">Contact MHR Groups</div><h2>Thoughtful conversations<br />start right here.</h2></div>
+            <p>Share your enquiry with us. We’ll make sure it reaches the right team and respond within two business days.</p>
+          </div>
+          <div class="contact-grid">
+            <aside class="details">
+              <div>
+                <div class="eyebrow">Get in touch</div>
+                <h3>We’re listening.</h3>
+                <p class="details-intro">For projects, partnerships, media enquiries or anything else, choose the easiest way to reach us.</p>
+                <div class="detail-list">
+                  <div class="detail"><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:admin@mhrcpl.com">admin@mhrcpl.com</a></span></div>
+                  <div class="detail"><span class="detail-label">Phone</span><span class="detail-value detail-phones"><span>+91 00000 00000 <small>Primary line</small></span><span>+91 11111 11111 <small>Secondary line</small></span></span></div>
+                  <div class="detail"><span class="detail-label">Location</span><span class="detail-value">India<br /><span style="font-size:12px;font-weight:400;color:#77766f">Pan-India project presence</span></span></div>
+                  <div class="detail"><span class="detail-label">Enquiries</span><span class="detail-value">Projects · Partnerships<br />Media · General</span></div>
+                </div>
+              </div>
+              <div class="response-note"><span class="response-icon" aria-hidden="true">↗</span><span>We aim to respond to every enquiry within two business days. For the quickest reply, include a few details about your project or request.</span></div>
+            </aside>
+            <form class="form-card" id="contactForm" novalidate>
+              <div class="form-top"><div><h3>Send an enquiry</h3><p>Tell us how we can help. Fields marked * are required.</p></div><span class="form-number">01</span></div>
+              <div class="row">
+                <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required /></div>
+                <div class="field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" placeholder="Company or organisation" /></div>
+              </div>
+              <div class="row">
+                <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required /></div>
+                <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Include country code" /></div>
+              </div>
+              <div class="field"><label for="interest">What would you like to discuss?</label><select id="interest" name="interest"><option>Industrial Development</option><option>Real Estate</option><option>Technology</option><option>Organic Food</option><option>Partnership</option><option>Media enquiry</option><option>Something else</option></select></div>
+              <div class="field"><label for="message">A little about your enquiry *</label><textarea id="message" name="message" placeholder="Share a few details…" required></textarea></div>
+              <div class="submit-row"><button class="submit" type="submit">Send your enquiry <span aria-hidden="true">↗</span></button><span class="form-help">Your details are used only to respond to your enquiry.</span></div>
+              <div class="form-msg" id="formMsg" role="status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="easy-connect" aria-labelledby="easy-connect-title">
+        <div class="wrap">
+          <div class="easy-head">
+            <div><div class="eyebrow">Stay in touch</div><h2 id="easy-connect-title">Easy connect.</h2></div>
+            <p>Choose the channel that feels natural. We’re bringing all of MHR’s social touchpoints together here.</p>
+          </div>
+          <div class="easy-grid">
+            <article class="easy-card" aria-label="WhatsApp social profile link coming soon">
+              <span class="easy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 11.8a8.2 8.2 0 0 1-12.1 7.1L4 20l1.2-4A8.2 8.2 0 1 1 20.2 11.8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4 0 .7.5.8 1.2 1.4 2 1.8.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.7-.1l1.6.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.6-.5.5-1.2.7-1.9.6-1-.1-2.3-.7-3.6-1.8-1.1-.9-1.9-2.1-2.1-3.1-.2-.9.1-1.8.5-2.4Z" fill="currentColor"/></svg></span>
+              <span><span class="easy-name">WhatsApp <span class="easy-arrow">↗</span></span><span class="easy-note">Profile link coming soon</span></span>
+            </article>
+            <article class="easy-card" aria-label="Instagram social profile link coming soon">
+              <span class="easy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.6" cy="6.7" r="1.1"/></svg></span>
+              <span><span class="easy-name">Instagram <span class="easy-arrow">↗</span></span><span class="easy-note">Profile link coming soon</span></span>
+            </article>
+            <article class="easy-card" aria-label="Facebook social profile link coming soon">
+              <span class="easy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.4Z"/></svg></span>
+              <span><span class="easy-name">Facebook <span class="easy-arrow">↗</span></span><span class="easy-note">Profile link coming soon</span></span>
+            </article>
+            <article class="easy-card" aria-label="LinkedIn social profile link coming soon">
+              <span class="easy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.1 8.6a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6ZM4.6 10h3v9h-3v-9Zm5 0h2.9v1.2h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.6V19h-3v-4.3c0-1 0-2.4-1.5-2.4s-1.8 1.1-1.8 2.3V19h-3v-9Z"/></svg></span>
+              <span><span class="easy-name">LinkedIn <span class="easy-arrow">↗</span></span><span class="easy-note">Profile link coming soon</span></span>
+            </article>
+            <article class="easy-card" aria-label="X social profile link coming soon">
+              <span class="easy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3h2.8l-6.1 7 7.2 11h-5.6l-4.4-6.7L7 21H4.2l6.6-7.6L3.9 3h5.8l4 6.1L18.9 3Zm-1 16h1.5L8.7 4.9H7.1L17.9 19Z"/></svg></span>
+              <span><span class="easy-name">X <span class="easy-arrow">↗</span></span><span class="easy-note">Profile link coming soon</span></span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="location" aria-labelledby="location-heading">
+        <div class="wrap location-grid">
+          <div class="location-copy" id="location-heading">
+            <div class="eyebrow">Rooted in Jharkhand</div>
+            <h2>Local roots.<br />A wider reach.</h2>
+            <p>MHR Groups is based in Jharkhand, with work and partnerships extending across India. Find us around two of the state’s key cities.</p>
+            <div class="city-list">
+              <div class="city"><strong>Ranchi</strong><span>State capital</span></div>
+              <div class="city"><strong>Jamshedpur</strong><span>Industrial city</span></div>
+            </div>
+          </div>
+          <div class="map-panel" role="img" aria-label="Map of Jharkhand marking Ranchi and Jamshedpur">
+            <div class="map-art">
+              <img class="map-shape" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Jharkhand_outline_shape.svg" alt="" />
+              <span class="map-label ranchi"><i class="map-dot"></i>Ranchi</span>
+              <span class="map-label jamshedpur"><i class="map-dot"></i>Jamshedpur</span>
+            </div>
+            <small class="map-credit">Map shape: <a href="https://commons.wikimedia.org/wiki/File:Jharkhand_outline_shape.svg" target="_blank" rel="noreferrer">Planemad / Wikimedia Commons</a> · CC BY-SA 4.0</small>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-band"><div class="wrap band-inner"><div><strong>Prefer to start with a quick note?</strong><p>Write to us directly and we’ll take it from there.</p></div><a class="band-link" href="mailto:admin@mhrcpl.com">EMAIL MHR GROUPS ↗</a></div></section>
+    </main>
+    <footer class="footer footer-dlf">
+      <div class="wrap footer-shell">
+        <div class="footer-sitemap-toggle"><span>SITEMAP</span><span class="toggle-chevron">⌄</span></div>
+        <div class="footer-identity">
+          <a class="footer-logo" href="mhr_groups_website_hyatt_vista_updated.html#home" aria-label="MHR Groups home"><img class="footer-logo-emblem" src="logo.png" alt="" /><span class="footer-logo-type">MHR GROUPS<small>MODERNITY · HONESTY · RELIABILITY</small></span></a>
+          <div class="footer-call"><span>CONNECT WITH US</span><a href="mailto:admin@mhrcpl.com">admin@mhrcpl.com</a></div>
+        </div>
+        <div class="footer-directory">
+          <div class="footer-dir-col"><h4>ABOUT MHR</h4><i></i><a href="mhr_groups_website_hyatt_vista_updated.html#about">Who We Are</a><a href="mhr_groups_website_hyatt_vista_updated.html#team">Leadership</a><a href="mhr_groups_website_hyatt_vista_updated.html#sustainability">Sustainability</a><a href="mhr_groups_website_hyatt_vista_updated.html#approach">Our Approach</a></div>
+          <div class="footer-dir-col"><h4>OUR SECTORS</h4><i></i><a href="mhr_groups_website_hyatt_vista_updated.html#sectors">Industrial Development</a><a href="mhr_groups_website_hyatt_vista_updated.html#sectors">Real Estate</a><a href="mhr_groups_website_hyatt_vista_updated.html#sectors">Technology</a><a href="mhr_groups_website_hyatt_vista_updated.html#sectors">Organic Food</a><a href="mhr_groups_website_hyatt_vista_updated.html#projects">Projects</a></div>
+          <div class="footer-dir-col"><h4>EXPLORE MHR</h4><i></i><a href="mhr_groups_website_hyatt_vista_updated.html#clients">Clients &amp; Partners</a><a href="mhr_groups_website_hyatt_vista_updated.html#projects">Featured Projects</a><a href="mhr_groups_website_hyatt_vista_updated.html#news">Events &amp; News</a><a href="contact-us.html">Contact Us</a><div class="footer-dir-sub"><h4>GET IN TOUCH</h4><i></i><a href="mailto:admin@mhrcpl.com">Email MHR Groups</a><a href="#enquiry">Send an enquiry</a></div></div>
+          <div class="footer-dir-col"><h4>FOLLOW &amp; CONNECT</h4><i></i><a href="mhr_groups_website_hyatt_vista_updated.html#clients">Our ecosystem</a><a href="mhr_groups_website_hyatt_vista_updated.html#news">Media &amp; Updates</a><div class="social footer-social"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="X">x</a></div></div>
+        </div>
+        <div class="footer-legal"><div><a href="#">Privacy Policy</a><a href="#">Disclaimer</a></div><span>Modernity · Honesty · Reliability</span></div>
+      </div>
+      <div class="footer-wordmark" aria-label="MHR Groups"><span>MHR GROUPS</span></div>
+      <div class="footer-endline"><span>© <span id="year"></span> MHR Groups. All rights reserved.</span><span>Built on trust. Designed for tomorrow.</span><a href="#top">BACK TO TOP ↑</a></div>
+    </footer>
+    <script>
+      const header = document.getElementById("header");
+      const menuButton = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+      const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 40);
+      updateHeader();
+      addEventListener("scroll", updateHeader, { passive: true });
+      menuButton.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        header.classList.add("scrolled");
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.textContent = isOpen ? "×" : "☰";
+      });
+      navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => navLinks.classList.remove("open")));
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("contactForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const value = (name) => form.elements[name].value.trim();
+        const message = document.getElementById("formMsg");
+        if (!value("name") || !/^\S+@\S+\.\S+$/.test(value("email")) || !value("message")) {
+          message.style.display = "block";
+          message.textContent = "Please add your name, a valid email address and a short message.";
+          return;
+        }
+        const body = `Name: ${value("name")}\nCompany: ${value("company")}\nEmail: ${value("email")}\nPhone: ${value("phone")}\nInterest: ${value("interest")}\n\n${value("message")}`;
+        window.location.href = `mailto:admin@mhrcpl.com?subject=${encodeURIComponent("Website enquiry — " + value("interest"))}&body=${encodeURIComponent(body)}`;
+        message.style.display = "block";
+        message.textContent = "Your email app should open with your enquiry ready to send.";
+      });
+    </script>
+  </body>
+</html>
